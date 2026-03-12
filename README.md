@@ -1,20 +1,87 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🌐 Personal Portfolio Website
 
-# Run and deploy your AI Studio app
+Portfolio website pribadi yang menampilkan proyek, keterampilan, dan pengalaman saya sebagai **Fullstack Web Developer**. Website ini dibuat untuk memperkenalkan karya saya serta memudahkan orang lain melihat proyek yang pernah saya kerjakan.
 
-This contains everything you need to run your app locally.
+## 🚀 Demo
 
-View your app in AI Studio: https://ai.studio/apps/007b6495-afa5-49f2-9ee8-69629f628222
+Lihat website portfolio saya di sini:
+👉 https://your-portfolio-link.com
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## 👨‍💻 Tentang Saya
 
+Halo, saya **Ainul Qodri** 👋
+Saya seorang **Fullstack Web Developer** yang fokus pada pengembangan aplikasi web modern, cepat, dan terukur.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Saya memiliki ketertarikan pada:
+
+* Web Application Development
+* Backend System Development
+* API Integration
+* UI/UX Web Interface
+
+---
+
+## 🛠 Tech Stack
+
+Website ini dibangun menggunakan teknologi berikut:
+
+* **React.js**
+* **Tailwind CSS**
+* **Framer Motion**
+* **Lucide Icons**
+* **Vite**
+
+---
+
+## ✨ Fitur
+
+* Hero section dengan animasi
+* Tampilan portfolio proyek
+* Animasi interaktif pada UI
+* Responsive design (mobile & desktop)
+* Integrasi sosial media
+* Tampilan modern dan minimalis
+
+---
+
+## 📂 Struktur Project
+
+```
+src
+ ├─ components
+ │   ├─ Hero.jsx
+ │   ├─ Navbar.jsx
+ │   ├─ Portfolio.jsx
+ │   └─ Footer.jsx
+ │
+ ├─ images
+ │   └─ profile.jpg
+ │
+ ├─ App.jsx
+ └─ main.jsx
+```
+
+---
+
+## ⚙️ Cara Menjalankan Project
+
+1️⃣ Clone repository
+
+```
+git clone https://github.com/username/portfolio.git
+```
+
+2️⃣ Masuk ke folder project
+
+```
+cd portfolio
+```
+
+3️⃣ Install dependencies
+
+```
+npm install
+`
+```
