@@ -72,6 +72,16 @@ const PROJECTS = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const handleNavClick = (href) => {
+    setIsOpen(false);
+
+    setTimeout(() => {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 200);
+  };
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -124,14 +134,13 @@ const Navbar = () => {
           >
             <div className="flex flex-col p-6 space-y-4">
               {navLinks.map((link) => (
-                <a 
-                  key={link.name} 
-                  href={link.href} 
-                  onClick={() => setIsOpen(false)}
-                  className="text-lg font-medium text-slate-300 hover:text-emerald-400"
+                <button
+                  key={link.name}
+                  onClick={() => handleNavClick(link.href)}
+                  className="text-lg font-medium text-slate-300 hover:text-emerald-400 text-left"
                 >
                   {link.name}
-                </a>
+                </button>
               ))}
             </div>
           </motion.div>
@@ -143,10 +152,7 @@ const Navbar = () => {
 
 const Hero = () => {
   return (
-    <section
-      id="home"
-      className="min-h-screen flex items-center justify-center bg-zinc-900 px-6"
-    >
+    <section id="home" className="min-h-screen flex items-center justify-center bg-zinc-900 px-6 scroll-mt-24">
       <div className="text-center flex flex-col items-center max-w-xl">
 
         {/* FOTO PROFIL */}
@@ -230,7 +236,7 @@ const Hero = () => {
 
 const About = () => {
   return (
-    <section id="about" className="py-24 bg-slate-950">
+    <section id="about" className="py-24 bg-slate-950 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -285,7 +291,7 @@ const About = () => {
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-24 bg-slate-900">
+    <section id="skills" className="py-24 bg-slate-900 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <motion.div
           whileInView={{ opacity: 1, y: 0 }}
@@ -323,7 +329,7 @@ const Skills = () => {
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-24 bg-slate-950">
+    <section id="portfolio" className="py-24 bg-slate-950 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <motion.div
@@ -400,7 +406,7 @@ const Portfolio = () => {
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 bg-slate-900 relative overflow-hidden">
+    <section id="contact" className="py-24 bg-slate-900 relative scroll-mt-24 overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent"></div>
       
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
