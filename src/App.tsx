@@ -55,7 +55,7 @@ const PROJECTS = [
     features: "Integrasi dengan sistem ERP untuk sinkronisasi data real-time dan notifikasi otomatis untuk pengisian ulang stok.",
     tech: ["Laravel", "Tailwind CSS", "MySQL", "Alpine.js"],
     link: "https://github.com/Ainulqodri/sistem-inventaris-barang.git",
-    image: "images/sistem_inventori.PNG"
+    image: "./images/sistem_inventori.PNG"
   },
   {
     title: "Aplikasi Prediksi Analisis Sentimen",
