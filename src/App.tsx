@@ -50,6 +50,14 @@ const PROJECTS = [
     image: "https://picsum.photos/seed/futsal/800/600"
   },
   {
+    title: "Sistem Inventaris B2B",
+    description: "Aplikasi full-stack yang dirancang untuk mengotomatisasi manajemen inventaris produk B2B. Klien dapat dengan mudah melacak dan mengelola stok barang mereka.",
+    features: "Integrasi dengan sistem ERP untuk sinkronisasi data real-time dan notifikasi otomatis untuk pengisian ulang stok.",
+    tech: ["Laravel", "Tailwind CSS", "MySQL", "Alpine.js"],
+    link: "https://github.com/Ainulqodri/sistem-inventaris-barang.git",
+    image: "images/sistem_inventori.PNG"
+  },
+  {
     title: "Aplikasi Prediksi Analisis Sentimen",
     description: "Platform analisis data interaktif untuk mengklasifikasikan sentimen publik (berbasis data Twitter) menggunakan model Deep Learning Long Short-Term Memory (LSTM).",
     features: "Antarmuka visualisasi data yang ramah pengguna menggunakan Streamlit, pemrosesan bahasa alami (NLP).",
