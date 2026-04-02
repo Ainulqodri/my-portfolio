@@ -37,6 +37,14 @@ const TECH_STACK = [
 
 const PROJECTS = [
   {
+    title: "Sistem Manajemen Klinik Gigi",
+    description: "Sistem reservasi dan manajemen klinik gigi (Dental Management System) untuk digitalisasi rekam medis dan booking jadwal.",
+    features: "Manajemen rekam medis digital, sistem antrean real-time, dan notifikasi pengingat via WhatsApp API.",
+    tech: ["Laravel", "Tailwind CSS", "MySQL", "Fonnte API"],
+    link: "https://github.com/Ainulqodri/drgputri.git",
+    image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800"
+  },
+  {
     title: "Sistem Reservasi Futsal Otomatis",
     description: "Aplikasi full-stack yang dirancang untuk mengotomatisasi manajemen penyewaan lapangan futsal. Klien tidak perlu lagi mencatat manual.",
     features: "Integrasi payment gateway Midtrans dan notifikasi otomatis via WhatsApp API.",
